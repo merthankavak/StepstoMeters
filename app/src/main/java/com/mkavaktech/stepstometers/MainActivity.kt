@@ -120,7 +120,7 @@ fun MainContent(modifier: Modifier = Modifier) {
 }
 
 @Composable
-private fun BottomInfoCard(
+fun BottomInfoCard(
     modifier: Modifier,
     metersState: MutableState<Int>
 ) {
@@ -229,7 +229,7 @@ fun StepsForm(
 
 @Composable
 @ExperimentalComposeUiApi
-private fun StepsTextField(
+fun StepsTextField(
     stepsState: MutableState<String>,
     validState: MutableState<Boolean>,
     onValueChange: (String) -> Unit,
@@ -248,7 +248,7 @@ private fun StepsTextField(
 }
 
 @Composable
-private fun HeightSlider(
+fun HeightSlider(
     modifier: Modifier,
     sliderPositionState: MutableState<Float>,
     validState: MutableState<Boolean>,
@@ -282,7 +282,7 @@ private fun HeightSlider(
 }
 
 @Composable
-private fun GenderTabRow(
+fun GenderTabRow(
     modifier: Modifier,
     activeTabIndexState: MutableState<Int>,
     genderIconList: List<ImageVector>,
